@@ -1,0 +1,47 @@
+body{
+    background-color:#D4D7D8;
+}
+.main-div{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /*yeni öğrendim her yerden boşluk verme*/
+}
+#list > div{
+    border: 5px solid #0D3C55;
+    padding: 15px 15px;
+    width: 15%;
+}
+span{
+    color: #F16C20;
+}
+p{
+    color: #022631;
+}
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
