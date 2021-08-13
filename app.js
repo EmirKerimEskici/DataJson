@@ -1,5 +1,4 @@
-
-    fetch('https://jsonplaceholder.typicode.com/users').then
+fetch('https://jsonplaceholder.typicode.com/users').then
     (response =>response.json()).then(responseJson => {
         let html='';
         for(let i=0;i<responseJson.length;i++){
@@ -25,5 +24,3 @@
     }).catch (error=> {
     alert("HATA")
 })
-
-        
